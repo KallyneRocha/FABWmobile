@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.moveis.new_fabw.view.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_login_to_signUp"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_login_to_navFragment"
+            app:destination="@id/navFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/home"
+        android:name="com.moveis.new_fabw.view.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.moveis.new_fabw.view.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUp_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.moveis.new_fabw.view.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_mapFragment_to_addContentFragment"
+            app:destination="@id/addContentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navFragment"
+        android:name="com.moveis.new_fabw.view.NavFragment"
+        android:label="fragment_nav"
+        tools:layout="@layout/fragment_nav" >
+        <action
+            android:id="@+id/action_navFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_home_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addContentFragment"
+        android:name="com.moveis.new_fabw.view.AddContentFragment"
+        android:label="fragment_add_content"
+        tools:layout="@layout/fragment_add_content" >
+        <action
+            android:id="@+id/action_addContentFragment_to_navFragment"
+            app:destination="@id/navFragment" />
+    </fragment>
+</navigation>

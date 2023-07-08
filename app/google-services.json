@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "615696475421",
+    "project_id": "new-fabw",
+    "storage_bucket": "new-fabw.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615696475421:android:2351d4fc812dca1fc0adf4",
+        "android_client_info": {
+          "package_name": "com.moveis.new_fabw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615696475421-icnm6gpfoi6nkm9k35unv0j8aur002iu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moveis.new_fabw",
+            "certificate_hash": "0aec275db3dcbdc355678383bec6b8c565089e7e"
+          }
+        },
+        {
+          "client_id": "615696475421-md4178rp4k78hb92u1ai3pd4120bev82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBewDl6Kr3qEvuiDQenMngzyAe3FSQD-sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615696475421-md4178rp4k78hb92u1ai3pd4120bev82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
